@@ -13,3 +13,12 @@ a,
   padding: 3px;
 }
 
+/* 移动端：缩小 live2d 容器 */
+@media (max-width: 576px) {
+  /* ✅ 不改 150×200，只整体等比缩小 */
+  .live2d-widget-container {
+    transform: scale(0.6);              /* 150×200 → 60×80 视觉尺寸 */
+    transform-origin: left bottom;      /* 从左下角缩，贴边不乱跑 */
+    pointer-events: none;              /* 保持你原来的交互策略 */
+  }
+}
