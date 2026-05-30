@@ -26,5 +26,17 @@ export default defineConfig({
       //   }
       // }
     }
+  },
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:9090",
+        changeOrigin: true,
+      },
+      "/sys": {
+        target: "http://localhost:9090",
+        changeOrigin: true,
+      }
+    }
   }
 })

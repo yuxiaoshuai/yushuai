@@ -14,7 +14,7 @@ yarn-error.log*
 *.swp
 *.swo
 *.suo
-*.ntvs*\
+*.ntvs*
 *.njsproj
 *.sln
 *.sw?
@@ -34,6 +34,7 @@ yarn-error.log*
 *.lock
 *.d.ts
 *.map
+.codex-chrome-robot-verify/
 coverage/
 
 # 5. 打包工具配置

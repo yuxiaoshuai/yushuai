@@ -25,7 +25,7 @@ import {
   editorObject,
   startPatrol,
   stopPatrol
-} from '@/utils/index.js';
+} from '@/utils/objEditor.js';
 
 export default {
   data() {
@@ -74,6 +74,14 @@ export default {
 
     editorObject() {
       editorObject(this.scene);
+    },
+
+    startPatrol() {
+      startPatrol(this.scene, this.camera);
+    },
+
+    stopPatrol() {
+      stopPatrol();
     },
   },
 };
