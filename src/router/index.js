@@ -31,9 +31,15 @@ const router = createRouter({
     {
       path: '/',
       // redirect: () => (getToken() ? '/other/home' : '/login'),
-      redirect: '/demo',
+      redirect: '/x',
     },
-
+    
+    {
+      path: '/x',
+      name: 'YuBotStream',
+      component: () => import('@/views/site/YuBotStreamPage.vue'),
+      meta: { public: true, layout: 'blank' },
+    },
     {
       path: '/demo',
       name: 'Demo',
